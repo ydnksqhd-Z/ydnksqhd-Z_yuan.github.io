@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/自然公园1.css" />
+    <title>Combined Page</title>
+    <style>
+        .empty-line {
+            height: 2rem; /* 设置空行的高度为20像素 */
+            width: 100%; /* 使空行充满整个宽度 */
+        }
+        .page1 {
+            height: 100vh; /* 设置每个页面的高度为视口高度，使其占据整个屏幕 */
+            overflow-y: scroll; /* 启用垂直滚动条 */
+            scroll-behavior: smooth; /* 平滑滚动效果 */
+        }
+        .page2 {
+            height: 100vh; /* 设置每个页面的高度为视口高度，使其占据整个屏幕 */
+            overflow-y: scroll; /* 启用垂直滚动条 */
+            scroll-behavior: smooth; /* 平滑滚动效果 */
+        }
+        #scrollButton {
+        display: block;
+        position: absolute;
+        bottom: 20px; /* 距离底部 20px */
+        left: 50%; /* 将左侧位置设置为页面宽度的一半 */
+        transform: translateX(-50%); /* 使用transform将元素水平居中 */
+}
+.content1 {
+      position: absolute; /* 设置绝对定位 */
+      top: 80rem; /* 距离父元素顶部的距离 */
+      right: 5rem; /* 距离父元素左侧的距离 */
+      width: 35rem; /* 设置宽度 */
+    }
+    .content2 {
+      position: absolute; /* 设置绝对定位 */
+      top: 130rem; /* 距离父元素顶部的距离 */
+      left: 5rem; /* 距离父元素左侧的距离 */
+      width: 35rem; /* 设置宽度 */
+    }
+    .content3 {
+      position: absolute; /* 设置绝对定位 */
+      top: 180rem; /* 距离父元素顶部的距离 */
+      right: 5rem; /* 距离父元素左侧的距离 */
+      width: 35rem; /* 设置宽度 */
+    }
+    .img1 {
+        position: absolute; /* 设置绝对定位 */
+        top: 70rem; /* 距离父元素顶部的距离 */
+        left: 6rem; /* 距离父元素左侧的距离 */
+        width: 60%; /* 设置宽度 */
+        width: 50rem;
+        height: 40rem;
+    }
+    .img2 {
+        position: absolute; /* 设置绝对定位 */
+        top: 120rem; /* 距离父元素顶部的距离 */
+        left: 50rem; /* 距离父元素左侧的距离 */
+        width: 60%; /* 设置宽度 */
+        width: 50rem;
+        height: 40rem;
+    }
+    .img3 {
+        position: absolute; /* 设置绝对定位 */
+        top: 170rem; /* 距离父元素顶部的距离 */
+        left: 6rem; /* 距离父元素左侧的距离 */
+        width: 60%; /* 设置宽度 */
+        width: 50rem;
+        height: 40rem;
+    }
+    /* 定义渐变 */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* 应用渐变和动画到文字 */
+    .fadeInText {
+      animation: fadeIn 2s ease-in-out; /* 使用2秒的动画时间 */
+    }
+    </style>
+</head>
+<body>
+<div class="page1">
+    <div class="content">
+       <h1 class="fadeInText">项目简介</h1>
+       <h1 class="fadeInText">Project Description</h1>
+    </div>
+    <div id="scrollButton" onclick="scrollToBottom()" >
+       <img src="images/下滑2.png" alt="滚动到底部" width="50" height="50" style="opacity: 0.8" />
+    </div>
+</div>
+
+<div class="page2">
+    <div class="empty-line"></div>  
+    <div class="content1">
+      <h1 style="font-size:2em; ">地质公园美景展示：</h1>
+    <h1>欢迎来到我们的地质公园，这里是大自然的杰作之一，蕴藏着无尽的奇迹和美景。我们诚挚地邀请您探索这个神奇的地方，在这里，您将会被壮丽的景色所震撼，被丰富的地质景观所吸引。</h1>
+    <h1>通过精美的图片和令人惊叹的视频，我们希望能够唤起您对大自然的热爱和探索的渴望。让我们一同领略地球之美，感受大自然的魅力，留下属于您自己的珍贵回忆。</h1>
+  </div>
+    <img class="img1" src="images/地质公园美景展示.jpg">
+</div>
+<div class="page2">
+  <div class="empty-line"></div>  
+  <div class="content2">
+    <h1 style="font-size:2em; ">研学旅行课程亮点：突出研学旅行课程的独特性和吸引力。</h1>
+  <h1>我们通过高精度的3D打印技术，呈现复杂的地质结构和化石模型，使得学生们可以直观、易懂地了解地质知识。他们可以触摸仿佛刚从地层中取出的化石，感受千万年地质变迁的痕迹，这种互动体验无疑增强了他们对地理科学的兴趣。通过数字化保存丰富的地质资源，我们不仅保护了当地独特的地质遗产，还有助于提升人们对传统文化的认知和尊重。</h1>
+  </div>
+  <img class="img2" src="images/自然1模型.jpg">
+</div>
+<div class="page2">
+  <div class="empty-line"></div>  
+  <div class="content3">
+    <h1 style="font-size:2em; ">乡村振兴策略概述：简要介绍项目对乡村振兴的积极作用。</h1>
+  <h1>在现今“数字矿山”、“数字城市”、“数字中国”的宏伟目标下，数字地理空间框架作为其重要的基础构架，有力推动了地矿行业地理信息技术由传统的二维图像向三维图像的技术变革。山西省吕梁市临县与岚县的地质公园3D打印技术融合乡村振兴项目，不仅是一次技术的革新，更是一项社会价值的体现。项目旨在通过高科技手段，为乡村注入新的活力，同时在科普教育、文化传承以及社区治理等方面发挥出重要的社会价值。</h1>
+  </div>
+  <img class="img3" src="images/自然公园1乡村振兴.jpg">
+</div>
+<script>
+    function scrollToBottom() {
+  var scrollHeight = document.body.scrollHeight;
+  var currentScroll = window.scrollY;
+  var timeInterval = 15; // 设置时间间隔为 20 毫秒
+  var distance = scrollHeight - currentScroll;
+  var speed = distance / 250; // 设置滚动速度
+
+  function scrollStep() {
+    if (window.scrollY < 940) {
+      window.scrollTo(0, window.scrollY + speed);
+      setTimeout(scrollStep, timeInterval);
+    }else{
+        var Button=document.getElementById('scrollButton');
+        if(Button){
+            Button.removeEventListener('click', scrollToBottom);
+        }
+    }
+  }
+  scrollStep();
+
+}
+</script>
+</body>
+</html>

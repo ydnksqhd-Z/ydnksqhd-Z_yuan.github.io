@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/自然公园6.css" />
+    <title>Combined Page</title>
+    <style>
+        .empty-line {
+            height: 2rem; /* 设置空行的高度为20像素 */
+            width: 100%; /* 使空行充满整个宽度 */
+        }
+        .page1 {
+            height: 100vh; /* 设置每个页面的高度为视口高度，使其占据整个屏幕 */
+            overflow-y: scroll; /* 启用垂直滚动条 */
+            scroll-behavior: smooth; /* 平滑滚动效果 */
+        }
+        .page2 {
+            height: 100vh; /* 设置每个页面的高度为视口高度，使其占据整个屏幕 */
+            overflow-y: scroll; /* 启用垂直滚动条 */
+            scroll-behavior: smooth; /* 平滑滚动效果 */
+        }
+        #scrollButton {
+        display: block;
+        position: absolute;
+        bottom: 20px; /* 距离底部 20px */
+        left: 50%; /* 将左侧位置设置为页面宽度的一半 */
+        transform: translateX(-50%); /* 使用transform将元素水平居中 */
+}
+.content1 {
+      position: absolute; /* 设置绝对定位 */
+      top: 75rem; /* 距离父元素顶部的距离 */
+      right: 5rem; /* 距离父元素左侧的距离 */
+      width: 38rem; /* 设置宽度 */
+    }
+    .content2 {
+      position: absolute; /* 设置绝对定位 */
+      top: 128rem; /* 距离父元素顶部的距离 */
+      left: 5rem; /* 距离父元素左侧的距离 */
+      width: 38rem; /* 设置宽度 */
+    }
+    .img1 {
+        position: absolute; /* 设置绝对定位 */
+        top: 70rem; /* 距离父元素顶部的距离 */
+        left: 6rem; /* 距离父元素左侧的距离 */
+        width: 60%; /* 设置宽度 */
+        width: 50rem;
+        height: 40rem;
+    }
+    .img2 {
+        position: absolute; /* 设置绝对定位 */
+        top: 120rem; /* 距离父元素顶部的距离 */
+        left: 50rem; /* 距离父元素左侧的距离 */
+        width: 60%; /* 设置宽度 */
+        width: 50rem;
+        height: 40rem;
+    }
+    /* 定义渐变 */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* 应用渐变和动画到文字 */
+    .fadeInText {
+      animation: fadeIn 2s ease-in-out; /* 使用2秒的动画时间 */
+    }
+    </style>
+</head>
+<body>
+<div class="page1">
+    <div class="content">
+       <h1 class="fadeInText">3d模型介绍</h1>
+       <h1 class="fadeInText">Three dimensional model introduction</h1>
+    </div>
+    <div id="scrollButton" onclick="scrollToBottom()" >
+       <img src="images/下滑2.png" alt="滚动到底部" width="50" height="50" style="opacity: 0.8" />
+    </div>
+</div>
+
+<div class="page2">
+  <div class="empty-line"></div>  
+  <div class="content1">
+  <h1 style="font-size:2em; ">3D打印技术在地质模型制作中的应用</h1>
+  <h1>3D打印技术在地质模型制作中扮演着至关重要的角色。地质模型是地质科学研究中的关键工具，它们帮助地质学家们更好地理解地球内部结构、地质过程以及资源分布情况。传统的地质模型制作通常需要花费大量时间和资源，而且受限于手工技能和材料的限制。但随着3D打印技术的进步，这一情况发生了改变。</h1>
+  <h1>通过3D打印技术，将地球表面的地形数据、地下地层结构等数字化信息转化为实体模型。这种数字化转化不仅提高了模型的准确性和精细度，还加快了制作过程。与传统手工模型相比，3D打印地质模型更具可定制性，能够快速调整尺寸、比例和细节，以满足不同研究需求。可以打印出具有断层、褶皱、岩石组成等细节的地质模型，从而更好地模拟地球的真实情况。这种高度逼真的模型有助于学者们进行地质事件的模拟和分析，进一步推动地质科学的发展。</h1>
+</div>
+  <img class="img1" src="images/6_3D1.jpg">
+</div>
+
+<div class="page2">
+  <div class="empty-line"></div>  
+  <div class="content2">
+    <h1 style="font-size:2em; ">3D打印技术在研学旅行中的互动体验</h1>
+  <h1>通过3D打印技术制作的地质构造模型可以让学生们亲手触摸、观察地球的各种地质结构，如地层、断层、岩石构造等。他们可以通过观察和比较不同地质构造的模型，更直观地理解地球演化的过程和地质学的原理。利用3D打印技术模拟各种地质景观，如峡谷、山峰、溪流等，为学生们提供了一个仿真的地质环境。他们可以在这些模拟的地质景观中探索、观察，感受地球的自然之美和地质之奥秘。</h1>
+  <h1>通过3D打印技术制作的互动体验装置可以让学生们参与到地质探索和学习中来。比如，地质演化模拟装置可以让学生们模拟地质运动的过程，了解地球表面的变化；化石挖掘装置可以让学生们体验挖掘化石的乐趣，感受科学探索的乐趣。</h1>
+  <h1>农业转型升级：鼓励农民采用先进的农业技术和管理模式，推动农业生产方式向绿色、有机、高效方向转变。</h1>
+</div>
+  <img class="img2" src="images/4乡村振兴1.jpg">
+</div>
+<script>
+    function scrollToBottom() {
+  var scrollHeight = document.body.scrollHeight;
+  var currentScroll = window.scrollY;
+  var timeInterval = 15; // 设置时间间隔为 20 毫秒
+  var distance = scrollHeight - currentScroll;
+  var speed = distance / 250; // 设置滚动速度
+
+  function scrollStep() {
+    if (window.scrollY < 940) {
+      window.scrollTo(0, window.scrollY + speed);
+      setTimeout(scrollStep, timeInterval);
+    }else{
+        var Button=document.getElementById('scrollButton');
+        if(Button){
+            Button.removeEventListener('click', scrollToBottom);
+        }
+    }
+  }
+  scrollStep();
+
+}
+</script>
+</body>
+</html>
