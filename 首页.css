@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+@font-face {
+  font-family: electronicFont;
+  src: url(../font/DS-DIGIT.TTF);
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  /*  背景图定位 / 背景图尺寸  cover 完全铺满容器  contain 完整显示在容器内 */
+  background: url(../images/背景.jpg) rgba(0, 0, 0, 0.7) no-repeat;
+  background-blend-mode: multiply;
+  background-size: cover;
+  /* 行高是字体1.15倍 */
+  line-height: 1.15;
+}
+header {
+  position: relative;
+  height: 1.25rem;
+  background: url(../images/head_bg.png) no-repeat top center;
+  background-size: 100% 100%;
+}
+header h1 {
+  font-size: 0.475rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1rem;
+}
+header .showTime {
+  position: absolute;
+  top: 0;
+  right: 0.375rem;
+  line-height: 0.9375rem;
+  font-size: 0.25rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+.mainbox {
+  min-width: 1024px;
+  max-width: 1920px;
+  padding: 0.125rem 0.125rem 0;
+  display: flex;
+}
+.mainbox .column {
+  height: 6.5rem;
+  flex: 3;
+}
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+.panel1 {
+  height: 100%;
+  position: relative;
+  border: 20px solid rgba(140, 143, 140, 0.17);
+  background: url(../images/lineone.png);
+  padding: 0.5rem 0.1875rem 0.5rem 0.5rem;
+  transition: transform 0.3s;
+}
+.panel1:hover {
+  background: url(../images/OIP.png) no-repeat top center;
+  background-size: 100% 100%;
+  transform:scale(1.05);
+}
+.panel1 h1 {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 0.3rem;
+  font-weight: 400;
+  margin-bottom: 25%;
+}
+.panel1 h2 {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2%;
+}
+.panel1 h2 a {
+  margin: 0 0.1875rem;
+  color: #fff;
+  text-decoration: underline;
+}
+.panel1 .chart {
+  display: none;
+  position: absolute;
+  bottom: 25%;
+  height: 0.4rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 0.35rem;
+  font-weight: 400;
+}
+.panel2 {
+  height: 100%;
+  position: relative;
+  border: 20px solid rgba(140, 143, 140, 0.17);
+  background: url(../images/lineone.png);
+  padding: 0.5rem 0.1875rem 0.5rem 0.5rem;
+  transition: transform 0.3s;
+}
+.panel2:hover {
+  background: url(../images/鄱阳湖2.png) no-repeat top center;
+  background-size: 100% 100%;
+  transform:scale(1.05);
+}
+.panel2 h1 {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 0.3rem;
+  font-weight: 400;
+  margin-bottom: 25%;
+}
+.panel2 h2 {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2%;
+}
+.panel2 h2 a {
+  margin: 0 0.1875rem;
+  color: #fff;
+  text-decoration: underline;
+}
+.panel2 .chart {
+  display: none;
+  position: absolute;
+  bottom: 25%;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 0.35rem;
+  font-weight: 400;
+}
+.panel3 {
+  height: 100%;
+  position: relative;
+  border: 20px solid rgba(140, 143, 140, 0.17);
+  background: url(../images/lineone.png);
+  padding: 0.5rem 0.1875rem 0.5rem 0.5rem;
+  transition: transform 0.3s;
+}
+.panel3:hover {
+  background: url(../images/3研学封面.jpg) no-repeat top center;
+  background-size: 100% 100%;
+  transform:scale(1.05);
+}
+.panel3 h1 {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 0.3rem;
+  font-weight: 400;
+  margin-bottom: 25%;
+}
+.panel3 h2 {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2%;
+}
+.panel3 h2 a {
+  margin: 0 0.1875rem;
+  color: #fff;
+  text-decoration: underline;
+}
+.panel3 .chart {
+  display: none;
+  position: absolute;
+  bottom: 25%;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 0.35rem;
+  font-weight: 400;
+}
+.panel4 {
+  height: 100%;
+  position: relative;
+  border: 20px solid rgba(140, 143, 140, 0.17);
+  background: url(../images/lineone.png);
+  padding: 0.5rem 0.1875rem 0.5rem 0.5rem;
+  transition: transform 0.3s;
+}
+.panel4:hover {
+  background: url(../images/4乡村振兴封面.jpg) no-repeat top center;
+  background-size: 100% 100%;
+  transform:scale(1.05);
+}
+.panel4 h1 {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 0.3rem;
+  font-weight: 400;
+  margin-bottom: 25%;
+}
+.panel4 h2 {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2%;
+}
+.panel4 h2 a {
+  margin: 0 0.1875rem;
+  color: #fff;
+  text-decoration: underline;
+}
+.panel4 .chart {
+  display: none;
+  position: absolute;
+  bottom: 25%;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 0.35rem;
+  font-weight: 400;
+}
+.panel5 {
+  height: 100%;
+  position: relative;
+  border: 20px solid rgba(140, 143, 140, 0.17);
+  background: url(../images/lineone.png);
+  padding: 0.5rem 0.1875rem 0.5rem 0.5rem;
+  transition: transform 0.3s;
+}
+.panel5:hover {
+  background: url(../images/5联系我们封面.jpg) no-repeat top center;
+  background-size: 100% 100%;
+  transform:scale(1.05);
+}
+.panel5 h1 {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 0.3rem;
+  font-weight: 400;
+  margin-bottom: 25%;
+}
+.panel5 h2 {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2%;
+}
+.panel5 h2 a {
+  margin: 0 0.1875rem;
+  color: #fff;
+  text-decoration: underline;
+}
+.panel5 .chart {
+  display: none;
+  position: absolute;
+  bottom: 25%;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 0.35rem;
+  font-weight: 400;
+}
+.panel6 {
+  height: 100%;
+  position: relative;
+  border: 20px solid rgba(140, 143, 140, 0.17);
+  background: url(../images/lineone.png);
+  padding: 0.5rem 0.1875rem 0.5rem 0.5rem;
+  transition: transform 0.3s;
+}
+.panel6:hover {
+  background: url(../images/6模型介绍封面.jpg) no-repeat top center;
+  background-size: 100% 100%;
+  transform:scale(1.05);
+}
+.panel6 h1 {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 0.3rem;
+  font-weight: 400;
+  margin-bottom: 25%;
+}
+.panel6 h2 {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2%;
+}
+.panel6 h2 a {
+  margin: 0 0.1875rem;
+  color: #fff;
+  text-decoration: underline;
+}
+.panel6 .chart {
+  display: none;
+  position: absolute;
+  bottom: 25%;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 0.35rem;
+  font-weight: 400;
+}
+.panel7 {
+  height: 100%;
+  position: relative;
+  border: 20px solid rgba(140, 143, 140, 0.17);
+  background: url(../images/lineone.png);
+  padding: 0.5rem 0.1875rem 0.5rem 0.5rem;
+  transition: transform 0.3s;
+}
+.panel7:hover {
+  background: url(../images/挠力河3.png) no-repeat top center;
+  background-size: 100% 100%;
+  transform:scale(1.05);
+}
+.panel7 h1 {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 0.3rem;
+  font-weight: 400;
+  margin-bottom: 25%;
+}
+.panel7 h2 {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2%;
+}
+.panel7 h2 a {
+  margin: 0 0.1875rem;
+  color: #fff;
+  text-decoration: underline;
+}
+.panel7 .chart {
+  display: none;
+  position: absolute;
+  bottom: 25%;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 0.35rem;
+  font-weight: 400;
+}
+.panel8 {
+  height: 100%;
+  position: relative;
+  border: 20px solid rgba(140, 143, 140, 0.17);
+  background: url(../images/lineone.png);
+  padding: 0.5rem 0.1875rem 0.5rem 0.5rem;
+  transition: transform 0.3s;
+}
+.panel8:hover {
+  background: url(../images/鄂尔多斯4.png) no-repeat top center;
+  background-size: 100% 100%;
+  transform:scale(1.05);
+}
+.panel8 h1 {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 0.3rem;
+  font-weight: 400;
+  margin-bottom: 25%;
+}
+.panel8 h2 {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2%;
+}
+.panel8 h2 a {
+  margin: 0 0.1875rem;
+  color: #fff;
+  text-decoration: underline;
+}
+.panel8 .chart {
+  display: none;
+  position: absolute;
+  bottom: 25%;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: left;
+  color: #fff;
+  font-size: 0.35rem;
+  font-weight: 400;
+}
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes rotate1 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 42px !important;
+  }
+}
+@media screen and (min-width: 1920) {
+  html {
+    font-size: 80px !important;
+  }
+}
