@@ -1,0 +1,221 @@
+*{//*匹配页面中的所有元素
+    margin: 0;//消除外边距差异
+    padding: 0;//消除内边距差异
+    box-sizing: border-box;//消除浏览器格式差异
+}
+li{
+    list-style: none;
+}
+@font-face {
+    font-family: electronicFont;
+    src: url(../font/DS-DIGIT.TTF);
+}
+body{//背景
+    background: url(../images/背景4.jpg)
+    no-repeat center center fixed;
+    background-size: cover;
+    }
+header{//头部
+    position: relative;
+    height:1.25rem;
+    background:url(../images/head_bg.png)
+    no-repeat;
+    background-size:100% 100%;
+    h1{
+        font-size: .475rem;
+        color: #2eb174;
+        text-align: center;
+        line-height: 1rem;
+    }
+    .showTime{
+        position:absolute;
+        top:0;
+        right: .375rem;
+        line-height: .9375rem;//行高
+        color: rgb(255,255,255,0.7);
+        font-size: .25rem;
+    }
+}
+//页面主题盒子
+.mainbox{
+    display: flex;
+    min-width: 1024px;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: .125rem .125rem;
+    .column{
+        flex:3;
+    }
+    .column:nth-child(2){
+        margin: .125rem .1875rem;//下，左右
+        flex:5;
+    }
+    .scroll-box {
+        top:0;
+        height: 5.7rem; /* 设置容器高度 */
+        width: 7rem;
+        padding: 0 .1875rem .5rem;//左右，上，下
+        border: 1px solid #02a6b5;
+        margin-bottom: .1875rem;//下页边距 /* 添加边框，2像素宽，颜色为深灰色 */
+        overflow: hidden; /* 隐藏溢出内容 */
+        padding: .125rem; /* 内边距 */
+        position: relative; /* 设置相对定位 */
+        font-size: 16px; /* 设置字体大小为16像素 */
+        color: yellow; /* 设置文本颜色为深灰色 */
+    }
+
+    .scroll-content {
+        position: absolute; /* 设置绝对定位 */
+        animation: scroll 10s linear infinite alternate; /* 滚动动画 */
+       // animation-iteration-count: infinite; /* 无限循环播放 */
+    }
+
+    @keyframes scroll {
+        0% { top: 0; }
+        100% { top: -100%; }
+    }
+    .ball{
+        position:relative;
+        height:6rem;
+        padding: 0 .1875rem .5rem;//左右，上，下
+        border: 1px solid #02a6b5;
+        margin-bottom: .1875rem;//下页边距
+        //h2
+        h2{
+            height:.6rem;
+            color:#fff;
+            line-height: .6rem;
+            text-align: center;
+            font-size: .25rem;
+            font-weight: 400;
+        }
+        .chart{
+            text-align: center;
+            font-size: .25rem;
+            height:5.5rem;
+            //background-color: white;
+        }
+    }
+    .line{
+        position:relative;
+        height:5rem;
+        padding: 0 .1875rem .5rem;//左右，上，下
+        border: 1px solid #02a6b5;
+        margin-bottom: .1875rem;//下页边距
+        //h2
+        h2{
+            height:.6rem;
+            color:#fff;
+            line-height: .6rem;
+            text-align: center;
+            font-size: .25rem;
+            font-weight: 400;
+        }
+        .chart{
+            text-align: center;
+            font-size: .25rem;
+            height:4.4rem;
+            //background-color: white;
+        }
+    }
+    .bar{
+        position:relative;
+        height:6.8rem;
+        padding: 0 .1875rem .5rem;//左右，上，下
+        border: 1px solid #02a6b5;
+        margin-bottom: .1875rem;//下页边距
+        //h2
+        h2{
+            height:.6rem;
+            color:#fff;
+            line-height: .6rem;
+            text-align: center;
+            font-size: .25rem;
+            font-weight: 400;
+        }
+        .chart{
+            text-align: center;
+            font-size: .25rem;
+            height:6rem;
+            //background-color: white;
+        }
+    }
+}
+//no数字模块
+.no{
+    font-size: .25rem;
+    background-color:rgba(101,132,226,0.1);
+    padding: .1875rem;
+    .no-hd{
+        position:relative;
+        border:1px solid rgba(25,186,139,17);
+        //右下角
+        &::before{
+            position:absolute;
+            bottom:0;
+            right:0;
+            content:"";
+            width:30px;
+            height:10px;
+            border-bottom: 2px solid #02a6b5;
+            border-right: 2px solid #02a6b5;
+        }
+        //左上角
+        &::after{
+            position:absolute;
+            top:0;
+            left:0;
+            content:"";
+            width:30px;
+            height:10px;
+            border-top: 2px solid #02a6b5;
+            border-left: 2px solid #02a6b5;
+        }
+        ul{
+            display: flex;
+            li{
+                position:relative;
+                flex:1;
+                line-height: 1rem;
+                font-size: .875rem;
+                color:#ffeb7b;
+                text-align: center;
+                font-family: "electronicFont";
+                &::after{
+                    content:'';
+                    position:absolute;
+                    top:25%;
+                    right:0;
+                    height:50%;
+                    width:.0125rem;
+                    background:rgba(255,255,255,0.2);
+                }
+            }
+        }
+    }
+    .no-bd{
+        ul{
+            display: flex;
+            li{
+                flex:1;
+                text-align: center;
+                color:rgba(255,255,255,0.7);
+                font-size:.225rem;
+                height:.5rem;
+                line-height: .5rem;
+                padding-top: .125rem;
+            }
+        }
+    }
+}
+.map{
+    position:relative;
+    height:11.8rem;
+    .chart{
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:11.8rem;
+    }
+}
